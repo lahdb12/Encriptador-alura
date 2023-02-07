@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style-home.css">
+    <title></title>
+</head>
+<body>
+    <header class="cabeza">
+        <img class="logo" src="recursos/Logo.png">
+    </header>
+    <main class="principal">
+        
+        <div class="cajauno">
+            <textarea type="text" id="textoEncriptado" cols="30" rows="10" required placeholder="ingrese su texto aquí"></textarea>
+        </div>
+        
+        <div class="reccajados">
+            <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
+        </div>
+        <section class="cajareq">
+            <p class="requiere"> Solo letras minúsculas y sin acentos</p>
+        </section>
+        <div class="botones">
+            <button type="button" id="botonEncriptado" class="boton1"><p>Encriptar</p></button>
+            <button type="button" id="botonDesencriptado" class="boton2"><p>Desencriptar</p></button>
+            <button type="button" id="botonCopiar" class="boton3"><p>Copiar</p></button>
+        </div>
+    
+    </main>
+
+
+
+
+
+</body>
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+
+    var btnD = document.querySelector("#botonDesencriptado");
+    btnD.onclick = desencriptar;
+
+    var btnC = document.querySelector("#botonCopiar");
+    btnC.onclick = copiarTexto;
+
+</script>
+</html>
+
