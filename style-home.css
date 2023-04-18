@@ -212,3 +212,21 @@ flex-grow: 0;
  text-align: center;
     
 }
+
+@media screen and (max-width: 480px){
+    
+    .h1{
+        text-align: center;
+    }
+    
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-dif, .video{
+        width: auto;
+    }
+
+
+
+}
